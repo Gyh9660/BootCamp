@@ -1,0 +1,17 @@
+## DB 스키마 생성
+
+use tutorial
+db.createUser(
+    {
+        user: "tutorial",
+        pwd: "tutorial",
+        roles : [
+            { role: "readWrite", db: "tutorial" }
+        ]
+    }
+),
+
+
+## 초기화
+
+use tutorial
